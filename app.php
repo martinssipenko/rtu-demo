@@ -7,7 +7,7 @@ use Silex\Application;
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 
-$app = new Silex\Application();
+$app = new Application();
 
 $log = new Logger('name');
 $log->pushHandler(new StreamHandler('php://stdout', Logger::WARNING));
